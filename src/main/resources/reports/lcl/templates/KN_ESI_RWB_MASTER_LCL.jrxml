@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="KN_ESI_SWB_MASTER" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e8100dd8-ea9b-47c1-99d8-942d53baadcb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="masterDataSet"/>
+	<queryString language="json">
+		<![CDATA[mainData]]>
+	</queryString>
+	<field name="mainDataField1" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="mainDataField1"/>
+		<fieldDescription><![CDATA[mainDataField1]]></fieldDescription>
+	</field>
+	<field name="data" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data"/>
+		<fieldDescription><![CDATA[data]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="57" splitType="Stretch">
+			<subreport>
+				<reportElement x="-20" y="-19" width="595" height="29" uuid="546a47b1-c675-48b2-88b0-5145564bbc8d"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["classpath:/reports/lcl/templates/KN_ESI_RWB_SUB1_LCL.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="-20" y="17" width="562" height="40" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="c2613f01-d25a-4180-829e-ab2ceb2bfa8c"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["classpath:/reports/lcl/templates/KN_ESI_RWB_SUB3_LCL.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="160" y="0" width="100" height="30" uuid="8a1dc66b-3f24-4a86-b7ae-b5bbe7d33d00"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="260" y="0" width="150" height="20" uuid="94441d65-00b9-4cf4-84f1-e363775f8821"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

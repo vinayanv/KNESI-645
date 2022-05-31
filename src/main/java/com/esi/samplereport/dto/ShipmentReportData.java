@@ -1,0 +1,83 @@
+package com.esi.samplereport.dto;
+
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+public class ShipmentReportData {
+
+    private String shipper;
+    private String consignee;
+    private String referenceNumber;
+    private String notifyParty;
+    private String notifyParty2;
+    private String placeOfReceipt;
+    private String preCarriageBy;
+    private String loadingPort;
+    private String oceanVessel;
+    private String voyageNumber;
+    private String transhipmentPort;
+    private String dischargePort;
+    private String deliveryPlace;
+    private String movement;
+    private String freightPayableAt;
+    private String remarksBl;
+    private String blInstructions;
+    private String fromEmailAddress;
+    private String deliveryAgent;
+    private Boolean telex;
+    private String destinationReference;
+    private String shipmentType;
+    private String bal;
+    private String mbl;
+    private String mblType;
+    private String originCountry;
+    private String exportOffice;
+    private String siCutoffDate;
+    private String siCutoffTime;
+    private String owner;
+    private String carrierCode;
+    private String deliveryTerms;
+    private String eta;
+    private String packageNumber;
+    private String consignmentId;
+    private String mot;
+    private String consigneeName;
+    private String consigneeClientId;
+    private String shipperClientId;
+    private String shipperName;
+    private String notes;
+    private String freightPaymentTerm;
+    private String placeOfIssue;
+    private String ets;
+    private String destinationCountry;
+    private String statusCode;
+    private Boolean siType;
+    private String email;
+    private Customer Customer;
+    private Boolean specimenRequired;
+    private Boolean hsCodeRequired;
+    private Boolean countryRequired;
+    private Boolean isDelegated;
+    private String siReceivedDate;
+    private String mblInstruction;
+    private String siCutOffDateTime;
+    private String shippedOnBoardVessel;
+    private Boolean fcr;
+    private Boolean isFcrRequired;
+    private String preCarriageVoyNo;
+    private Long totalContainerCount;
+    private String logoUrl;
+    private String fcrLogoUrl;
+    private String footerAddress1;
+    private String footerAddress2;
+    private String footerAddress3 ;
+    private String shippedOnBoard;
+    private Long totalNumberOfPackages;
+    private String totalGrossWeight;
+    private String totalMeasurement;
+    private String insurance;
+    List<ContainerReportData> containerDetailsList;
+    private String typeOfDocument;
+}

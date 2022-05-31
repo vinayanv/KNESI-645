@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BL_TEST1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9f61974b-fe78-4d8c-93a8-0dedf0564a44">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BLNotifyMissing"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="knBlDataset" uuid="4f93c043-d075-4580-8b84-83fd361fcf92">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="masterDataSet"/>
+		<queryString language="json">
+			<![CDATA[mainData.data.containerDetailsList]]>
+		</queryString>
+		<field name="id" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="id"/>
+			<fieldDescription><![CDATA[id]]></fieldDescription>
+		</field>
+		<field name="containerNumber" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="containerNumber"/>
+			<fieldDescription><![CDATA[containerNumber]]></fieldDescription>
+		</field>
+		<field name="ediContainerType" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="ediContainerType"/>
+			<fieldDescription><![CDATA[ediContainerType]]></fieldDescription>
+		</field>
+		<field name="cielUnitType" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="cielUnitType"/>
+			<fieldDescription><![CDATA[cielUnitType]]></fieldDescription>
+		</field>
+		<field name="typeName" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="typeName"/>
+			<fieldDescription><![CDATA[typeName]]></fieldDescription>
+		</field>
+		<field name="sealNumber" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="sealNumber"/>
+			<fieldDescription><![CDATA[sealNumber]]></fieldDescription>
+		</field>
+		<field name="totalPackages" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="totalPackages"/>
+			<fieldDescription><![CDATA[totalPackages]]></fieldDescription>
+		</field>
+		<field name="type" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="type"/>
+			<fieldDescription><![CDATA[type]]></fieldDescription>
+		</field>
+		<field name="name" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="name"/>
+			<fieldDescription><![CDATA[name]]></fieldDescription>
+		</field>
+		<field name="hsCode" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="hsCode"/>
+			<fieldDescription><![CDATA[hsCode]]></fieldDescription>
+		</field>
+		<field name="marksNumbers" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="marksNumbers"/>
+			<fieldDescription><![CDATA[marksNumbers]]></fieldDescription>
+		</field>
+		<field name="goodsDescription" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="goodsDescription"/>
+			<fieldDescription><![CDATA[goodsDescription]]></fieldDescription>
+		</field>
+		<field name="grossWeight" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="grossWeight"/>
+			<fieldDescription><![CDATA[grossWeight]]></fieldDescription>
+		</field>
+		<field name="measurement" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="measurement"/>
+			<fieldDescription><![CDATA[measurement]]></fieldDescription>
+		</field>
+		<field name="createdDate" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="createdDate"/>
+			<fieldDescription><![CDATA[createdDate]]></fieldDescription>
+		</field>
+		<field name="active" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="active"/>
+			<fieldDescription><![CDATA[active]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="masterDataSet" uuid="fe34d11c-7c1b-414f-9566-46c2f6cae1a9">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<subDataset name="test" uuid="d0644e27-1fb8-4c37-9e44-55c6fc536339">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="test"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<subDataset name="latesttest" uuid="6fcac38d-abd7-4f82-b11c-b7c744c28c5a">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="latesttest"/>
+		<queryString language="json">
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<subDataset name="Dataset1" uuid="0c284e70-4dc1-4845-99a7-7d1817907330">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="test1"/>
+		<queryString language="json">
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<subDataset name="KNESILATEST" uuid="9c4e1af6-4f13-48e3-bfa7-8c6f97683fbd">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="KNESILATEST"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<subDataset name="KNESILATEST(BL)" uuid="b9925c64-bf55-465b-9214-328155eeaa10">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="KNESILATEST(BL)"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<subDataset name="BLNotifyMissing" uuid="a2ed4aef-3154-449d-af9e-364ec936d27f">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BLNotifyMissing"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<queryString language="json">
+		<![CDATA[reportData.data]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="id"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="shipper" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="shipper"/>
+		<fieldDescription><![CDATA[shipper]]></fieldDescription>
+	</field>
+	<field name="consignee" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="consignee"/>
+		<fieldDescription><![CDATA[consignee]]></fieldDescription>
+	</field>
+	<field name="referenceNumber" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="referenceNumber"/>
+		<fieldDescription><![CDATA[referenceNumber]]></fieldDescription>
+	</field>
+	<field name="referenceNumberVersion" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="referenceNumberVersion"/>
+		<fieldDescription><![CDATA[referenceNumberVersion]]></fieldDescription>
+	</field>
+	<field name="notifyParty" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="notifyParty"/>
+		<fieldDescription><![CDATA[notifyParty]]></fieldDescription>
+	</field>
+	<field name="notifyParty2" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="notifyParty2"/>
+		<fieldDescription><![CDATA[notifyParty2]]></fieldDescription>
+	</field>
+	<field name="placeOfReceipt" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="placeOfReceipt"/>
+		<fieldDescription><![CDATA[placeOfReceipt]]></fieldDescription>
+	</field>
+	<field name="preCarriageBy" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="preCarriageBy"/>
+		<fieldDescription><![CDATA[preCarriageBy]]></fieldDescription>
+	</field>
+	<field name="loadingPort" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="loadingPort"/>
+		<fieldDescription><![CDATA[loadingPort]]></fieldDescription>
+	</field>
+	<field name="oceanVessel" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="oceanVessel"/>
+		<fieldDescription><![CDATA[oceanVessel]]></fieldDescription>
+	</field>
+	<field name="voyageNumber" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="voyageNumber"/>
+		<fieldDescription><![CDATA[voyageNumber]]></fieldDescription>
+	</field>
+	<field name="transhipmentPort" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="transhipmentPort"/>
+		<fieldDescription><![CDATA[transhipmentPort]]></fieldDescription>
+	</field>
+	<field name="dischargePort" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="dischargePort"/>
+		<fieldDescription><![CDATA[dischargePort]]></fieldDescription>
+	</field>
+	<field name="deliveryPlace" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="deliveryPlace"/>
+		<fieldDescription><![CDATA[deliveryPlace]]></fieldDescription>
+	</field>
+	<field name="movement" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="movement"/>
+		<fieldDescription><![CDATA[movement]]></fieldDescription>
+	</field>
+	<field name="freightPayableAt" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="freightPayableAt"/>
+		<fieldDescription><![CDATA[freightPayableAt]]></fieldDescription>
+	</field>
+	<field name="remarksBl" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="remarksBl"/>
+		<fieldDescription><![CDATA[remarksBl]]></fieldDescription>
+	</field>
+	<field name="blInstructions" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="blInstructions"/>
+		<fieldDescription><![CDATA[blInstructions]]></fieldDescription>
+	</field>
+	<field name="createdDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="createdDate"/>
+		<fieldDescription><![CDATA[createdDate]]></fieldDescription>
+	</field>
+	<field name="active" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="active"/>
+		<fieldDescription><![CDATA[active]]></fieldDescription>
+	</field>
+	<field name="totalNumberOfPackages" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="totalNumberOfPackages"/>
+		<fieldDescription><![CDATA[totalNumberOfPackages]]></fieldDescription>
+	</field>
+	<field name="totalGrossWeight" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="totalGrossWeight"/>
+		<fieldDescription><![CDATA[totalGrossWeight]]></fieldDescription>
+	</field>
+	<field name="totalMeasurement" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="totalMeasurement"/>
+		<fieldDescription><![CDATA[totalMeasurement]]></fieldDescription>
+	</field>
+	<field name="totalAmountDue" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="totalAmountDue"/>
+		<fieldDescription><![CDATA[totalAmountDue]]></fieldDescription>
+	</field>
+	<field name="placeOfIssue" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="placeOfIssue"/>
+		<fieldDescription><![CDATA[placeOfIssue]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="date"/>
+		<fieldDescription><![CDATA[date]]></fieldDescription>
+	</field>
+	<field name="shippedOnBoard" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="shippedOnBoard"/>
+		<fieldDescription><![CDATA[shippedOnBoard]]></fieldDescription>
+	</field>
+	<field name="receiptOnly" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="receiptOnly"/>
+		<fieldDescription><![CDATA[receiptOnly]]></fieldDescription>
+	</field>
+	<field name="deliveryTerms" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="deliveryTerms"/>
+		<fieldDescription><![CDATA[deliveryTerms]]></fieldDescription>
+	</field>
+	<field name="insurance" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="insurance"/>
+		<fieldDescription><![CDATA[insurance]]></fieldDescription>
+	</field>
+	<field name="voyage" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="voyage"/>
+		<fieldDescription><![CDATA[voyage]]></fieldDescription>
+	</field>
+	<field name="ets" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ets"/>
+		<fieldDescription><![CDATA[ets]]></fieldDescription>
+	</field>
+	<field name="eta" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="eta"/>
+		<fieldDescription><![CDATA[eta]]></fieldDescription>
+	</field>
+	<field name="logoUrl" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="logoUrl"/>
+		<fieldDescription><![CDATA[logoUrl]]></fieldDescription>
+	</field>
+	<field name="deliveryAgent" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="deliveryAgent"/>
+		<fieldDescription><![CDATA[deliveryAgent]]></fieldDescription>
+	</field>
+	<field name="totalContainerCount" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="totalContainerCount"/>
+		<fieldDescription><![CDATA[totalContainerCount]]></fieldDescription>
+	</field>
+	<field name="destinationReference" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="destinationReference"/>
+		<fieldDescription><![CDATA[destinationReference]]></fieldDescription>
+	</field>
+	<field name="freightPaymentTerm" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="freightPaymentTerm"/>
+		<fieldDescription><![CDATA[freightPaymentTerm]]></fieldDescription>
+	</field>
+	<field name="footerAddress1" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="footerAddress1"/>
+		<fieldDescription><![CDATA[footerAddress1]]></fieldDescription>
+	</field>
+	<field name="footerAddress2" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="footerAddress2"/>
+		<fieldDescription><![CDATA[footerAddress2]]></fieldDescription>
+	</field>
+	<field name="footerAddress3" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="footerAddress3"/>
+		<fieldDescription><![CDATA[footerAddress3]]></fieldDescription>
+	</field>
+	<field name="containerDetailsList" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="containerDetailsList"/>
+		<fieldDescription><![CDATA[containerDetailsList]]></fieldDescription>
+	</field>
+	<field name="pol" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="pol"/>
+		<fieldDescription><![CDATA[pol]]></fieldDescription>
+	</field>
+	<field name="pod" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="pod"/>
+		<fieldDescription><![CDATA[pod]]></fieldDescription>
+	</field>
+	<field name="pot" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="pot"/>
+		<fieldDescription><![CDATA[pot]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="728" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<frame>
+				<reportElement x="15" y="5" width="267" height="94" uuid="65070f96-448f-435a-bdae-9eaeb4e58f76">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="1" y="1" width="100" height="18" uuid="c75f9787-2e2b-4098-9504-26b553383e1e"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="10" isBold="false" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<text><![CDATA[Shipper]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="2" y="21" width="264" height="72" uuid="2e313f0a-9fdd-4cb4-957b-0490bc28a939">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="10"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" isBold="false" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{shipper}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="282" y="5" width="266" height="94" uuid="a288261b-b9db-4103-a304-6fdb204b02d3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="57" width="264" height="25" uuid="ffe626fc-9870-4071-b24b-7f8f0d53edee">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box topPadding="5" leftPadding="35" bottomPadding="3"/>
+					<textElement markup="none">
+						<font fontName="Arial Unicode MS" size="12" isBold="true" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<text><![CDATA[Bill of Lading]]></text>
+				</staticText>
+				<image scaleImage="Clip" hAlign="Left" vAlign="Middle" onErrorType="Blank">
+					<reportElement x="1" y="1" width="265" height="56" uuid="a52adcfe-c726-45ba-b596-3b24fb99c0e8">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box topPadding="0" leftPadding="5" bottomPadding="0"/>
+					<imageExpression><![CDATA[$F{logoUrl}]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="132" y="78" width="131" height="17" uuid="68622147-3fe1-4f06-bcba-28be36b07bde">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="5"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[for Multimodal Transport
+And Port to Port Transport]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement x="15" y="99" width="267" height="88" uuid="bbcef34d-48dd-4471-855b-a138dc02094d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="1" y="1" width="68" height="18" isPrintWhenDetailOverflows="true" uuid="0002afc7-e250-4e67-8bc4-8a46c9726aa5"/>
+					<box leftPadding="5" rightPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="Arial Unicode MS" size="10" isBold="false" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<text><![CDATA[Consignee]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="2" y="20" width="264" height="68" uuid="48e93a00-2345-434c-9bc3-dbcbca26c3c2">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="10"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{consignee}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement x="59" y="2" width="160" height="18" uuid="9f017b87-06d9-431a-bf98-afb0caa4ba26">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA["(This bill is non-negotiable unless marked “To order” or “To the order of ....” Here. See Clause 4)"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="282" y="99" width="266" height="88" uuid="ebc3fd6a-3274-4cc2-a8ca-a542415319a0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="1" y="1" width="88" height="18" isPrintWhenDetailOverflows="true" uuid="b245f561-8fa2-457e-ba6c-ad615b05848e"/>
+					<box leftPadding="5" rightPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="Arial Unicode MS" size="10" isBold="false" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<text><![CDATA[Notify Party 2]]></text>
+				</staticText>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement x="72" y="2" width="160" height="18" uuid="90b2c8ea-c5e3-4ef1-b65a-5cd8944130fd">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA["(No liability shall attach to the Carrier or to his Agent for failure to notify. See Clause 14)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="2" y="20" width="264" height="68" uuid="43d57248-17e7-4af5-8acd-9d423b11c540">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="30"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{notifyParty2}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="15" y="187" width="267" height="78" uuid="a67e4750-5bbc-48ce-80ae-18a82db2e8ef">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="1" y="1" width="88" height="18" isPrintWhenDetailOverflows="true" uuid="38aa6fb5-fba4-49d0-809c-2eb3b4160a11"/>
+					<box leftPadding="5" rightPadding="0"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="Arial Unicode MS" size="10" isBold="false" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<text><![CDATA[Notify Party]]></text>
+				</staticText>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement x="63" y="2" width="160" height="18" uuid="b8c77d92-1e3b-469d-bbf0-3df2c075b9c2">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA["(No liability shall attach to the Carrier or to his Agent for failure to notify. See Clause 14)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="2" y="18" width="264" height="61" uuid="a2111f62-f734-42cf-8820-5c4dba36707d">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="30"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{notifyParty}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="282" y="187" width="266" height="78" uuid="cf4d06d9-a7ca-4fc2-a12b-750be23d0e64">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="1" y="1" width="100" height="18" uuid="d50cb0fd-75af-425f-9ae9-5a691351bfdf"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="10" isBold="false" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<text><![CDATA[Delivery Agent]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="2" y="19" width="263" height="57" uuid="c3f065dd-8ede-4170-941c-351f96c4494e">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="30"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{deliveryAgent}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="15" y="266" width="369" height="32" uuid="84c00acc-cc3b-4dc9-a5c2-bc43acc55a6d"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="267" y="0" width="102" height="8" uuid="9f53eac9-66aa-47b5-9a19-09d0380c5833"/>
+					<box leftPadding="5">
+						<leftPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Port of Loading]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="0" width="139" height="8" uuid="b322a80d-e493-44d3-b57b-99e0cbbe74de"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Place of Receipt (Multimodal Transport only)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="140" y="0" width="102" height="8" uuid="71be32eb-8575-4f8d-9213-26df1a7c9ebe"/>
+					<box leftPadding="5">
+						<leftPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Pre-carriage by]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="267" y="8" width="100" height="22" uuid="a4ba5618-f4ce-4328-bcaf-5281938d6d12"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{loadingPort}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="2" y="9" width="138" height="22" uuid="7f9c4297-79b3-4465-a4cc-8ad8c1bc95de"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{placeOfReceipt}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="140" y="9" width="126" height="22" uuid="35bc1122-1705-43d6-a07d-fb27df0f5d10"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{preCarriageBy}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="15" y="298" width="369" height="31" uuid="18a3dea2-bb52-4544-adb8-963b3d1ae155"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="1" y="0" width="139" height="8" uuid="53426bcf-ee67-498d-95f9-d0e9b6a36d11"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Vessel]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="140" y="0" width="102" height="8" uuid="53fd1d75-d76f-40d2-a3dd-3a3e70b3ed73"/>
+					<box leftPadding="5">
+						<leftPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Voyage No.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="267" y="0" width="102" height="8" uuid="01556d2d-d3f7-4162-bd0f-9c1e58be4efc"/>
+					<box leftPadding="5">
+						<leftPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Port of Transshipment]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="2" y="9" width="138" height="22" uuid="07866d2a-a7d1-4a6f-afea-0546ef3fb129"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{oceanVessel}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="140" y="9" width="126" height="22" uuid="b36c2535-11dd-4e74-bb0f-47cfdf5a6128"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{voyageNumber}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="267" y="9" width="100" height="22" uuid="7829a5b2-8d3b-4d16-9c99-91e31af6e0a4"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{transhipmentPort}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="384" y="266" width="164" height="63" uuid="e2f76824-392c-4023-afba-a9e7a87447c2"/>
+				<box>
+					<pen lineWidth="1.75"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="1" width="100" height="19" uuid="26df3f04-ac07-4dc2-874c-b2a065d7289d"/>
+					<box topPadding="1" leftPadding="5"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="9" isBold="true" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<text><![CDATA[B/L-No.]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="0" y="40" width="163" height="23" uuid="ae1f4692-5acb-45d7-a277-a2604c0255ff"/>
+					<box leftPadding="5" bottomPadding="5"/>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial Unicode MS" size="13" isBold="false" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{referenceNumber}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="6" y="23" width="151" height="19" uuid="e4636eab-7847-4ec8-8bae-ac42e4f1cd74">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Bottom" rotation="None">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{destinationReference}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="15" y="329" width="533" height="32" uuid="23426f7b-2608-48ac-902f-beb1b5ffe5e2"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textField isBlankWhenNull="true">
+					<reportElement x="2" y="9" width="138" height="22" uuid="f3c6090f-6128-481e-ad1e-48a53d21342c"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{dischargePort}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="140" y="0" width="150" height="8" uuid="5282a780-46b3-4a73-9e14-a963ea656842"/>
+					<box leftPadding="5">
+						<leftPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Place of Delivery (Multimodal Transport only)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="0" width="139" height="8" uuid="5ebd38c2-b9d1-46b0-a416-73d7d702e8f1"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Port of Discharge]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="140" y="9" width="150" height="22" uuid="d0cbef70-7062-43e9-a821-ab1a00ee5237"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{deliveryPlace}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="290" y="1" width="100" height="8" uuid="d7956fa4-e387-49b2-88f1-75c49827ddba"/>
+					<box leftPadding="5">
+						<leftPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Movement]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="290" y="10" width="100" height="22" uuid="d2e515f8-7e56-4f15-9e50-3422c22de41e"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{movement}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="390" y="1" width="142" height="8" uuid="4cab9c7b-d909-4269-b841-a65c3639546a"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Freight Payable at]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="390" y="10" width="142" height="22" uuid="8c6a3c39-5e5c-4a4c-b7a6-fec0798404d6"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{freightPayableAt}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="15" y="361" width="533" height="22" uuid="27890170-4f86-4381-85e9-5a30feecb61b"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="1" y="1" width="530" height="20" uuid="617d5937-72f2-4472-a717-a8c32ebec1e5"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="10" isBold="true" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<text><![CDATA[PARTICULARS FURNISHED BY SHIPPER - CARRIER NOT RESPONSIBLE (See Clause 7.3)]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="15" y="665" width="533" height="60" uuid="8dc5fcf4-8c8f-4e52-af30-9e9c65f176ee">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image scaleImage="RetainShape" onErrorType="Blank">
+					<reportElement x="301" y="7" width="231" height="29" uuid="e6ef9ce3-d198-4cc8-9e31-23ed8fae8675"/>
+					<imageExpression><![CDATA[$F{logoUrl}]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="141" y="1" width="29" height="10" uuid="1b66ece8-5cd4-4ee8-bd86-4dc8eacd9f86"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Date:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="171" y="1" width="100" height="10" uuid="9275c2a9-3349-4158-a7e9-28afd16c76d4"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ets}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="141" y="14" width="129" height="10" uuid="1132d918-90f9-4a98-afae-f19603dfebe9"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Shipped on Board Vessel:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="141" y="22" width="130" height="12" uuid="3dca0c51-7342-4d2c-942c-acf5d818a16e"/>
+					<textFieldExpression><![CDATA[$F{shippedOnBoard}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="141" y="37" width="129" height="10" uuid="116cd2e9-23e8-404c-a2ea-cee6de182d29"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Shipped from Port of Loading:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="141" y="45" width="130" height="12" uuid="10bb463a-1283-430f-8b5c-8bf602059816"/>
+					<textFieldExpression><![CDATA[$F{loadingPort}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="10" y="5" width="15" height="15" uuid="2842bea9-0ae0-4c4c-a3b4-de2153f0c900"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["X"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="10" y="27" width="15" height="15" uuid="6da4f9c0-8345-442e-98f3-a3bba79ffc49"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" "]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="27" y="5" width="100" height="15" uuid="d824aad9-f630-4e44-a836-45c9de55d714"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Shipped on board*]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="28" y="27" width="99" height="15" uuid="f4737b1e-0dd6-4551-90f3-7c39ab9c6088"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Receipt only*]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="43" width="116" height="13" uuid="610863cd-604b-438f-9f99-8d869cc64b22"/>
+					<textElement verticalAlignment="Middle">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[* please mark as appropriate]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="301" y="1" width="228" height="6" uuid="d789e003-fe3e-456c-92be-47604b97ec76"/>
+					<textElement>
+						<font size="5"/>
+					</textElement>
+					<text><![CDATA[For and on behalf of the Carrier]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="320" y="36" width="108" height="12" uuid="8160f5dc-f3e0-46aa-bb67-c3db0d14b1a3"/>
+					<textElement>
+						<font size="8" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[KUEHNE & NAGEL LIMITED]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="301" y="36" width="19" height="6" uuid="af0279dd-7f3a-464b-ace9-17746aa220ea"/>
+					<box rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<text><![CDATA[By]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="321" y="49" width="107" height="6" uuid="18a7c40a-e93a-4be2-996e-bb2fa46d0f49"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="5"/>
+					</textElement>
+					<text><![CDATA[As Agents for the Carrier]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="15" y="502" width="299" height="163" uuid="6b57d3d3-30bb-469b-8e3d-225a53f40fe8">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="2" y="1" width="138" height="19" uuid="02577ba0-404b-4451-b834-79b739947fc9"/>
+					<box topPadding="2" leftPadding="5"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[OCEANFREIGHT AND CHARGES]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="13" width="148" height="19" uuid="8a6473db-3ace-47ca-9a43-0ad41b3dff41"/>
+					<box topPadding="2" leftPadding="5"/>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[Rates, Weight and/or Measurement subject to correction]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="151" y="1" width="59" height="21" uuid="8b96e853-115b-4e20-8e89-638c96201454"/>
+					<box topPadding="2"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Prepaid]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="240" y="1" width="59" height="21" uuid="9989d1aa-a1c9-4844-920b-2e018f20487d"/>
+					<box topPadding="2"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Collect]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="144" width="138" height="19" uuid="49ae8bbe-a2e5-40e3-8dfa-68f5ce66a5f5"/>
+					<box leftPadding="5">
+						<pen lineWidth="0.0"/>
+					</box>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Total amount due]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="141" y="144" width="158" height="19" uuid="475b2108-92ef-4e82-a2e6-ca93e7fcc50d"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[$F{totalAmountDue}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="314" y="502" width="234" height="163" uuid="f558a6f1-df1a-4134-9e37-c525e0ff18c3">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="1" width="80" height="19" uuid="21ca3276-a597-410e-9f28-0db810e16d54"/>
+					<box topPadding="8" leftPadding="5"/>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Declared Cargo Value]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="80" y="2" width="152" height="18" uuid="8f3636b3-5502-4d26-8e7f-e68908792f6d"/>
+					<box topPadding="3"/>
+					<textElement>
+						<font size="9" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[*** NO VALUE DECLARED ***]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="21" width="231" height="19" uuid="8316c7b6-5abb-4c0b-9fdf-bae2bce8843c"/>
+					<box topPadding="0" leftPadding="5">
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[If Merchant enters a value, Carrier's per package limitation of liability shall not apply and the valorem rate will be charged.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="41" width="231" height="99" uuid="04ecc9dc-df95-4855-a24f-6e11446d8582"/>
+					<box topPadding="2" leftPadding="5"/>
+					<textElement>
+						<font size="4"/>
+					</textElement>
+					<text><![CDATA[Received by the Carrier, as far as ascertained by reasonable means of checking, in apparent good
+order and condition unless otherwise herein stated, the total number or quantity of Containers or
+other packages or units indicated in the box entitled "Number of Packages" for carriage from the port
+of loading (or the place of receipt, if mentioned above) to the port of discharge (or the place of
+delivery, if mentioned above), such carriage being always subject to the terms, rights, defences,
+provisions, conditions, exceptions, limitations, and liberties hereof (INCLUDING ALL THOSE TERMS
+AND CONDITIONS ON THE REVERSE HEREOF NUMBERED 1-21 AND THOSE TERMS AND
+CONDITIONS CONTAINED IN THE CARRIER'S APPLICABLE TARIFF) and the Merchant's attention
+is drawn in particular to the Carrier's liberties in respect of on deck stowage (see clause 13) and the
+carrying vessel (see clause 12). The Merchant is obliged to surrender one original bill of lading, duly
+endorsed, in exchange for the Goods. The Carrier accepts a duty of reasonable care to check that
+any such document which the Merchant surrenders as a bill of lading is genuine and original. If the
+Carrier complies with this duty, it will be entitled to deliver the Goods against what it reasonably
+believes to be a genuine and original bill of lading, such delivery discharging the Carrier's delivery
+obligations. In accepting this bill of lading, any local customs or privileges to the contrary
+notwithstanding, the Merchant agrees to be bound by all Terms and Conditions stated herein whether
+written, printed, stamped or incorporated on the face or reverse side hereof, as fully as if they were
+all signed by the Merchant.
+IN WITNESS WHEREOF the Carrier by its agents has signed three (3) original Bills of Lading all of
+this tenor and date and as soon as at least one original is surrendered the others shall be void.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="140" width="209" height="10" uuid="dfa913a9-d7a8-475b-90a2-0d56d690eac3"/>
+					<box leftPadding="5"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Place and date of issue:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="1" y="150" width="109" height="12" uuid="090bc208-7668-494c-955d-e4807367042f"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{placeOfIssue}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="111" y="150" width="109" height="12" uuid="78840772-684c-4c60-8570-6bc263a084cf"/>
+					<box leftPadding="5"/>
+					<textFieldExpression><![CDATA[$F{ets}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="15" y="382" width="533" height="122" uuid="a1c9625e-60eb-4de4-83ad-e14d0b33f7d1">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="356" y="-2" width="94" height="30" uuid="89a2935e-6b90-4069-b0b4-0f9fd30b8684">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box topPadding="4" leftPadding="4"/>
+					<textElement textAlignment="Left" verticalAlignment="Top"/>
+					<text><![CDATA[Gross Weight kgs]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="450" y="-2" width="82" height="30" uuid="5e6edacb-b96f-40bf-93c0-1cbc6d8d03d6"/>
+					<box topPadding="4" leftPadding="4"/>
+					<textElement textAlignment="Left" verticalAlignment="Top"/>
+					<text><![CDATA[Measurement]]></text>
+				</staticText>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement x="360" y="30" width="90" height="30" uuid="d2e62dd2-71c2-4093-91dd-fd7ae50111b9">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box leftPadding="2"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{totalGrossWeight}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="180" y="30" width="180" height="14" uuid="df477664-9e6f-472f-9c7a-7d939656cac5">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box leftPadding="2"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[AS PER ATTACHED]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="180" y="-2" width="176" height="30" uuid="196c0a8b-1a17-4acb-b11f-2dc4e3affdbf">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box topPadding="4" leftPadding="4"/>
+					<textElement textAlignment="Left" verticalAlignment="Top"/>
+					<text><![CDATA[Description of Goods]]></text>
+				</staticText>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement x="450" y="30" width="82" height="30" uuid="09ea755b-0fa6-4b47-a8b5-38fac06e0669">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box leftPadding="2"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{totalMeasurement}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="100" y="-2" width="80" height="30" uuid="4cc94b9c-6844-44db-b928-7cdccfa784e4"/>
+					<box topPadding="4" leftPadding="4"/>
+					<textElement textAlignment="Left" verticalAlignment="Top"/>
+					<text><![CDATA[Qty]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="-2" width="100" height="30" uuid="7ae4da3a-ae84-401a-a1ad-ff13579fd486"/>
+					<box topPadding="4" leftPadding="4"/>
+					<textElement textAlignment="Left" verticalAlignment="Top"/>
+					<text><![CDATA[Marks and Numbers]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="180" y="45" width="60" height="15" uuid="56b9f380-b6ca-4964-b2ba-c0df413d638e">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[FREIGHT]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="239" y="45" width="121" height="15" uuid="357aee15-4632-41b2-83e9-d89217495321">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{freightPaymentTerm}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="100" y="30" width="80" height="30" uuid="5489bbd6-06ac-45be-af20-4956b539afca"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{totalNumberOfPackages}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="1" y="30" width="99" height="30" uuid="29390da3-277b-4bb7-b3be-b85e8bb8d064"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[TOTAL]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
